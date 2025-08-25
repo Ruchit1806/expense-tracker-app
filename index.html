@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="color: white; margin-top: 15px;">Expense Tracker</h1>
+
+  <!-- Summary Section -->
+  <div class="summary">
+    <div id="income">Income: <span>0</span></div>
+    <div id="expense">Expense: <span>0</span></div>
+    <div id="total">Total: <span>0</span></div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <select id="type-filter">
+      <option value="all">All</option>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <select id="category-filter">
+      <option value="all">Categories</option>
+      <option value="default">default</option>
+      <option value="food">Food</option>
+      <option value="Transport">Transport</option>
+      <option value="bill">bill</option>
+      <option value="shopping">Shopping</option>
+      <option value="salary">Salary</option>
+      <option value="other">other</option>
+    </select>
+
+    <select id="date-filter">
+      <option value="date">all date</option>
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+      <option value="select">Select Date</option>
+    </select>
+
+    <input type="date" id="date-picker" style="display:none;">
+    <button onclick="resetFilters()">Reset</button>
+  </div>
+
+  <!-- Add Transaction button moved ABOVE transaction list -->
+  <button class="add-btn" onclick="location.href='second.html'">+ Add Transaction</button>
+
+  <!-- Transaction List -->
+  <ul id="transaction-list"></ul>
+  <p class="no-data" id="no-data">No transactions available</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

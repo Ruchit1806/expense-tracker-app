@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Transaction</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* 🌈 Background with gradient */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      padding: 24px 20px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 520px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #444;
+    }
+
+    input, select {
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+      background: #f9f9f9;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus, select:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102,126,234,0.3);
+      outline: none;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    button, .link-btn {
+      flex: 1;
+      background: #667eea;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 14px;
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      transition: transform 0.15s, background 0.2s;
+    }
+
+    button:hover, .link-btn:hover {
+      background: #5a6edc;
+      transform: translateY(-2px);
+    }
+
+    #refresh-btn {
+      background: #ff9800;
+    }
+    #refresh-btn:hover {
+      background: #e68900;
+    }
+
+    .secondary {
+      background: #444;
+    }
+    .secondary:hover {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>➕ Add Transaction</h1>
+
+    <form id="transaction-form">
+      <!-- Row 1: Type + Amount -->
+      <div class="two-col">
+        <div class="field">
+          <label for="type">Type</label>
+          <select id="type" required>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="₹" required />
+        </div>
+      </div>
+
+      <!-- Row 2: Category + Date -->
+      <div class="two-col">
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" required>
+           <option value="default">default</option>
+           <option value="food">food</option>
+            <option value="Transport">Transport</option>
+            <option value="Bills">Bills</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Salary">Salary</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" required />
+        </div>
+      </div>
+
+      <!-- Row 3: Note -->
+      <div class="field">
+        <label for="note">Note (optional)</label>
+        <input type="text" id="note" placeholder="e.g., Lunch, Electricity bill, etc." />
+      </div>
+
+      <!-- Buttons -->
+      <div class="actions">
+        <button type="submit">✅ Add</button>
+        <button type="button" id="refresh-btn">🔄 Refresh</button>
+        <a class="link-btn secondary" href="index.html">🏠 Home</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="second.js"></script>
+</body>
+</html>
