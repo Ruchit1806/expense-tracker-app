@@ -1,6 +1,6 @@
 # Expense Tracker App 💰
 
-A fully functional web-based Expense Tracker application built using HTML, CSS, and JavaScript. Allows users to track daily expenses, categorize spending, and visualize budgets. Designed with clean, maintainable code, responsive UI, and intuitive user experience—showcasing practical skills in frontend web development and This project was built with proactive problem-solving and leveraging modern AI-powered guidance tools to enhance development workflow, showing the ability to **adapt, learn, and implement cutting-edge solutions** efficiently.
+A fully functional web-based and mobile Expense Tracker application built using HTML, CSS, and JavaScript. Allows users to track daily expenses, categorize spending, and visualize budgets. Designed with clean, maintainable code, responsive UI, and intuitive user experience—showcasing practical skills in frontend web development and This project was built with proactive problem-solving and leveraging modern AI-powered guidance tools to enhance development workflow, showing the ability to **adapt, learn, and implement cutting-edge solutions** efficiently.
 
 ---
 
