@@ -1,10 +1,6 @@
 # Expense Tracker App 💰
 
-A **web-based and mobile application** designed to help users efficiently track daily expenses, manage budgets, and gain actionable insights. Developed with clean, maintainable Dart code and
-modern Flutter best practices, demonstrating strong skills in **UI/UX design, state management, responsive design, and cross-platform development**.
-
-This project was built with proactive problem-solving and leveraging modern AI-powered guidance tools to enhance development workflow, showing the ability to **adapt, learn, and
-implement cutting-edge solutions** efficiently.
+A fully functional web-based Expense Tracker application built using HTML, CSS, and JavaScript. Allows users to track daily expenses, categorize spending, and visualize budgets. Designed with clean, maintainable code, responsive UI, and intuitive user experience—showcasing practical skills in frontend web development and This project was built with proactive problem-solving and leveraging modern AI-powered guidance tools to enhance development workflow, showing the ability to **adapt, learn, and implement cutting-edge solutions** efficiently.
 
 ---
 
@@ -19,9 +15,10 @@ implement cutting-edge solutions** efficiently.
 
 
 ## 🛠️ Tech Stack
-- **Flutter & Dart** – Cross-platform development
-- **Charts_flutter** – Data visualization
-- Responsive UI design for web and mobile
+
+HTML – Structure and content of the web pages
+CSS – Styling, layout, and responsive design
+JavaScript – App logic, interactivity, and dynamic behavior
 
 
 ---
