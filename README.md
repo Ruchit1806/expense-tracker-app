@@ -17,6 +17,11 @@ implement cutting-edge solutions** efficiently.
 
 ---
 
+🌐 Live Demo
+
+Try the Expense Tracker app online or on your device:
+
+Open Expense Tracker App
 ## 🛠️ Tech Stack
 - **Flutter & Dart** – Cross-platform development
 - **Charts_flutter** – Data visualization
